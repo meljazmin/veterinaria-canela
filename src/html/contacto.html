@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7d5dbf8fc4.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Veterinaria Canela</title>
+</head>
+
+<body>
+    <nav class="navContainer">
+        <!-- <div class="logo">
+        
+        </div> -->
+        <span class="navLogo">
+            <img src="../imagenes/dog-paw-print.png" />
+            Veterinaria Canela</span>
+        <ul class="navBar">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mi</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Conózcanos</a>
+                <div class="dropdown-content">
+                    <a href="servicios.html">Servicios</a>
+                    <a href="galeria.html">Galeria</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">Staff</a>
+                <div class="dropdown-content">
+                    <a href="miembros.html">Miembros</a>
+                    <a href="nuestros-valores.html">Nuestros valores</a>
+                </div>
+            <li><a href="que-dicen-de-nosotros.html">Que dicen de nosotros</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul> <!-- shift + alt + f (para formatear codigo) -->
+    </nav>
+    <section class="wow animate__animated animate__fadeIn" data-wow-duration="1s">
+        <div class="container">
+            <div class="mb-5">
+                <h1 class="cabeceraPagina center">Contacto</h1>
+                <p class="subtitulos">Contactá a nuestros profesionales</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 direccion">
+                    <div><i class="fas fa-map-marker-alt icon2"></i>Avenida Rivadavia 4100, CABA</div>
+                    <div><i class="fas fa-phone-alt icon2"></i> +54 9 1556967705</div>
+                    <div><i class="far fa-envelope icon2"></i> drmorgan@veterinariacanela.com.ar</div>
+                </div>
+                <iframe class="col-sm-6"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.66334799964!2d-58.42563358519488!3d-34.61267346547818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca5c25e8a649%3A0x788df89d91725195!2sAv.%20Rivadavia%204100%2C%20C1205%20AAN%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1604273686353!5m2!1ses-419!2sar"></iframe>
+            </div>
+            <form id="contactoForm">
+                <fieldset>
+                    <legend>Tus datos</legend>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input class="form-control" type="text" name="nombre" required maxlength="50"
+                            placeholder="Tu nombre" />
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input class="form-control" type="text" name="apellido" requited maxlength="50"
+                            placeholder="Tu apellido" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input class="form-control" type="email" name="email" placeholder="Tu email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input class="form-control" type="number" name="telefono" placeholder="Tu teléfono" />
+                    </div>
+                    <div class="form-group">
+                        <label for="especie">Tu mascota es:</label>
+                        <select class="form-control" name="especie">
+                            <option value="gato">Gato</option>
+                            <option value="perro">Perro</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="form-control" name="mensaje" rows="10" cols="70"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="acepta" value="1" />
+                            <label class="form-check-label" for="acepta">¿Deseas suscribirte a nuestro
+                                newsletter?</label>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn button2" value="Enviar formulario" />
+                    <input type="reset" class="btn button2" value="Limpiar formulario" />
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container d-flex flex-wrap justify-content-center">
+            <div class="p-2 flex-fill footer2">
+                <h2>Veterinaria Canela</h2>
+                <p>Más de 15 años presentes en Buenos Aires,atendiendo con calidad y calidez.</p>
+            </div>
+            <div class="p-2 flex-fill footer2">
+                <h2>Contactanos</h2>
+                <addres> Avenida Rivadavia 4100, CABA, Buenos Aires, Argentina. Email:
+                    info@veterinariacanela.com</addres>
+            </div>
+            <div class="p-2 flex-fill footer2">
+                <h2>Suscribite a nuestro newsletter</h2>
+                <p>Si querés suscribirte, dejanos tu correo y nos contactaremos con vos.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/libs/WOW-1.3.0/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
