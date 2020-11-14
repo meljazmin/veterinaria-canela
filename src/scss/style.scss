@@ -1,0 +1,409 @@
+$color-icon: #9c2169;
+
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Open+Sans:ital,wght@1,300&family=Quicksand&display=swap");
+
+@import "variables";
+@import "menu";
+@import "index";
+@import "footer";
+@import "team";
+@import "animation";
+@import "galeria";
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #ffd4f0;
+  /* background: rgb(255, 212, 240); */
+  background: linear-gradient(0deg, #ffd4f0 0%, #e8b5bd 100%);
+  /* margin: 0px; */
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* height: 100%; */
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+}
+
+
+.center {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Esto aplica a cualquier imagen del documento
+img {
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    width: 100%;
+} */
+table {
+  color: #7d2850;
+  padding-top: 30px;
+}
+
+#mostradorMiembros {
+  border-collapse: collapse;
+  border-style: hidden;
+}
+
+#mostradorMiembros img {
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  border: 0.5px solid #9c2169;
+  border-collapse: collapse;
+}
+
+/*#mostradorMiembros img:hover{
+    -webkit-opacity: 0.25;
+    -moz-opacity: 0.25;
+    opacity: 0.25;
+}
+*/
+.presentacionProfesionales {
+  color: #7d2850;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ACÁ EMPIEZA EL ESTILO DE MOSTRADOR */ 
+
+.profesionales {
+  border-collapse: collapse;
+  width: 50%;
+  margin: auto;
+}
+
+.profesionales th {
+  border-top: 2.5px solid #c6b4cc;
+  border-bottom: 5px solid #c6b4cc;
+}
+
+.profesionales td {
+  border-bottom: 2.5px solid #c6b4cc;
+}
+
+.profesionales tbody tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+.profesionales tbody tr td:first-child {
+  text-align: center;
+}
+
+.profesionales tbody tr:last-child td {
+  border: none;
+}
+
+.profesionales ul {
+  list-style-image: url("../imagenes/iconopaw.png");
+}
+
+.opinion {
+  color: #7d2850;
+  text-align: center;
+}
+
+.subtitulos {
+  text-align: center;
+  color: #7d2850;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+form {
+  color: #7d2850;
+}
+
+.pieDePagina {
+  text-align: right;
+  font-size: 25px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  align-self: flex-end;
+}
+
+.box {
+  margin: 10px;
+  padding: 10px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.box img {
+  /* width: 25vw;
+    height: 25vh; */
+  margin: 10px;
+  width: 250px;
+  height: 150px;
+  border-radius: 20%;
+}
+
+#mostradorServicios > div > div {
+  border: 2px solid #7d2850;
+}
+
+#mostradorServicios img {
+  width: 100%;
+  height: 100%;
+}
+
+/*footer {
+    background-color: #7d2850;
+    border-radius: 15px;
+    padding-top: 
+}*/
+
+fieldset {
+  border-radius: 15px;
+  border-color: #d95db4;
+}
+
+
+/* SECCIÓN NUESTROS VALORES */
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.card1 {
+  flex: 0 0 200px;
+  margin: 10px;
+  flex-grow: 1;
+  height: 230px;
+  width: 270px;
+  text-align: center;
+}
+
+
+.card1 .text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#opinionesDueños .card1 .text h3 {
+  color: #7d2850;
+  text-align: center;
+}
+
+#opinionesDueños .card1 .text p {
+  text-align: center;
+  color: black;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* COLOR DE LOS BOTONES */
+
+.button {
+  background-color: white;
+  color: #7d2850;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.button:hover {
+  background-color: #7d2850;
+  color: white;
+}
+
+.button2 {
+  color: #7d2850;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.button2:hover {
+  background-color: #7d2850;
+  color: white;
+}
+
+.icon {
+  font-size: 50px;
+  color: $color-icon;
+}
+
+.icon2 {
+  font-size: 20px;
+  color: $color-icon;
+  padding-top: 20px;
+  margin-right: 20px;
+}
+
+/* Flexbox */
+.redondel {
+  border: 4px solid #9c2169;
+  border-radius: 50%;
+}
+
+.sombra {
+  box-shadow: 0px 8px 16px 0px violet;
+}
+
+
+/* Animación sección Miembros */
+.miembros {
+  animation-duration: 2s;
+  animation-name: animacion;
+}
+
+@keyframes animacion {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+/* TRANSICIÓN APLICADA EN SECCIÓN SERVICIOS */
+.flipBox {
+  background-color: transparent;
+  width: 25vw;
+  height: 30vh;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.flipBoxInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flipBox:hover .flipBoxInner {
+  transform: rotateY(180deg);
+}
+
+.flipBoxFront,
+.flipBoxBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipBoxFront {
+  background-color: #bbb;
+  color: black;
+}
+
+.flipBoxBack {
+  background-color: #7d2850;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+.flipBoxContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.textoFlipBox {
+  padding-top: 50px;
+}
+
+/* Cambio en los formularios */
+#contactoForm {
+  padding-top: 50px;
+}
+
+iframe {
+  /* margin: auto; */
+  /* height: 100vh; */
+  border: 0;
+}
+
+/* Mi estilo */
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+
+.card {
+  border: none;
+  border-radius: 10px;
+  height: 200px;
+}
+
+span {
+  color: #db558d;
+}
+
+.about {
+  background-color: #940641;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 0;
+}
+
+// .col-md-4 {
+//    margin-bottom: 100px;
+// }
+
+.about img {
+  margin-top: -68px;
+  border: 5px solid white;
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: 300px;
+  }
+}
+
