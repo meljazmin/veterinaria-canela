@@ -1,3 +1,5 @@
+@import "variables";
+
 /* ACÁ EMPIEZA LA SECCIÓN GALERÍA */
 
 
@@ -137,11 +139,11 @@
     display: block;
     text-align: center;
     height: 5vh;
-    color: #7d2850;
+    color: $secondary-color;
     border-bottom: 1px solid purple;
   }
   .dropdown-content a:active {
-    background-color: #e1b4d2;
+    background-color: $tertiary-color
     color: white;
   }
   .dropdown:active .dropdown-content {
@@ -181,7 +183,7 @@
     height: auto;
   }
   .navLogo {
-    color: #7d2850;
+    color: $secondary-color;
     font-size: 20px;
     float: left;
     padding: 12px 10px;
@@ -208,7 +210,7 @@
   }
   .navBar > li > a {
     display: block;
-    color: #7d2850;
+    color: $secondary-color;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -216,7 +218,7 @@
     position: relative;
   }
   .navBar > li > a:hover {
-    background-color: #e1b4d2;
+    background-color: $tertiary-color;
     color: white;
   }
   .navBar li .dropbtn {
@@ -243,17 +245,17 @@
     text-decoration: none;
     display: block;
     text-align: left;
-    color: #7d2850;
+    color: $secondary-color;
   }
   .dropdown-content a:hover {
-    background-color: #e1b4d2;
+    background-color: $tertiary-color;
     color: white;
   }
   .dropdown:hover .dropdown-content {
     display: block;
   }
   .active {
-    background-color: #e1b4d2;
+    background-color:$tertiary-color;
     color: white !important;
   }
   .imagenPrincipal {

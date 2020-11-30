@@ -1,3 +1,4 @@
+@import "variables";
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -112,7 +113,7 @@
     opacity: 0.8; }
   
   .testimonial .testimonial-content {
-    width: 100%;
+    width: $width/2;
     position: absolute;
     left: 0; }
   
@@ -126,7 +127,7 @@
     position: relative; }
   
   .testimonial .pic img {
-    width: 100%;
+    width: $width/2;
     height: auto; }
   
   .testimonial .title {

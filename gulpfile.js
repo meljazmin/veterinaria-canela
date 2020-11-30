@@ -1,8 +1,8 @@
-const { src, dest } = require('gulp');
+const gulp = require('gulp');
+const zip = require('gulp-zip');
 
-const build = () => {
-    return src('src/**/*.js')
-        .pipe(dest('output/'));
-}
-
-exports.default = build;
+gulp.task('zip', () => {
+    return gulp.src(['src/**/*', 'package*.json'], { base: '.' })
+        .pipe(zip('archive.zip'))
+        .pipe(gulp.dest('dist'))
+});

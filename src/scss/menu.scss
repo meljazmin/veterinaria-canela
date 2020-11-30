@@ -1,3 +1,4 @@
+@import "variables";
 /* ACÁ EMPIEZA EL MENÚ */
 
 
@@ -43,7 +44,7 @@
 
 .navBar > li > a {
   display: block;
-  color: #7d2850;
+  color: $secondary-color;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -52,7 +53,7 @@
 }
 
 .navBar > li > a:hover {
-  background-color: #e1b4d2;
+  background-color: $tertiary-color;
   color: white;
 }
 
@@ -83,11 +84,11 @@
   text-decoration: none;
   display: block;
   text-align: left;
-  color: #7d2850;
+  color: $secondary-color;
 }
 
 .dropdown-content a:hover {
-  background-color: #e1b4d2;
+  background-color: $tertiary-color;
   color: white;
 }
 
@@ -96,7 +97,7 @@
 }
 
 .active {
-  background-color: #e1b4d2;
+  background-color: $tertiary-color;
   color: white !important;
 }
 
