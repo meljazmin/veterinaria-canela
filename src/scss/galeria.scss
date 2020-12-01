@@ -1,4 +1,6 @@
 @import "variables";
+@import "menu";
+
 
 /* ACÁ EMPIEZA LA SECCIÓN GALERÍA */
 
@@ -64,6 +66,7 @@
   .navContainer {
     position: relative;
     text-align: center;
+    border-bottom: 2px solid #dbc9c5;
   }
   .navLogo {
     float: none;
