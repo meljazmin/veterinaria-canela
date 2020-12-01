@@ -288,7 +288,7 @@ footer h2 {
   opacity: 0.8; }
 
 .testimonial .testimonial-content {
-  width: 100%;
+  width: 100px;
   position: absolute;
   left: 0; }
 
@@ -302,7 +302,7 @@ footer h2 {
   position: relative; }
 
 .testimonial .pic img {
-  width: 100%;
+  width: 100px;
   height: auto; }
 
 .testimonial .title {
@@ -785,7 +785,7 @@ form {
   text-align: right;
   font-size: 25px;
   color: white;
-  width: 100%;
+  width: 100px;
   text-align: center;
   padding: 50px;
   align-self: flex-end; }
@@ -934,7 +934,7 @@ fieldset {
 
 .flipBox__inner {
   position: relative;
-  width: 100%;
+  width: 100px;
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
@@ -945,7 +945,7 @@ fieldset {
 
 .flipBox__card {
   position: absolute;
-  width: 100%;
+  width: 100px;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
@@ -1008,3 +1008,8 @@ span {
 @media (max-width: 768px) {
   .card {
     height: 300px; } }
+
+.inputStyle {
+  background-color: #aa8494;
+  color: white;
+  border: 1px solid; }

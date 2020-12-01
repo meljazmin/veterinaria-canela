@@ -4,7 +4,7 @@
   "description": "Pagina web para Veterinaria Canela",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "build-css": "node-sass --include-path scss src/scss/style.scss src/css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "keywords": [
