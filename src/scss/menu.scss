@@ -4,9 +4,7 @@
 
 .navContainer {
   text-align: right;
-  /* position: relative; */
   top: 0;
-  /* background-color: #d3cfd0; */
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   border-bottom: 2px solid #dbc9c5;
@@ -30,7 +28,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
 }
 
 .navBar > li {
@@ -38,7 +35,6 @@
   text-align: center;
   border: none;
   outline: 0;
-  /* font-size: 1px; */
   position: relative;
 }
 
@@ -59,7 +55,6 @@
 
 .navBar li .dropbtn {
   display: inline-block;
-  /* color: white; */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -74,12 +69,10 @@
   position: absolute;
   background-color: #ffd4f0;
   min-width: 160px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
   z-index: 999;
 }
 
 .dropdown-content a {
-  /* color: black; */
   padding: 12px 16px;
   text-decoration: none;
   display: block;
