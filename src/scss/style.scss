@@ -31,7 +31,6 @@ body {
   padding: 10px;
 }
 
-
 table {
   color: $secondary-color;
   padding-top: 30px;
@@ -42,12 +41,10 @@ table {
   border-style: hidden;
 }
 
-
 @mixin sizes($width, $height) {
-  height: $height; 
-  width: $width; 
+  height: $height;
+  width: $width;
 }
-
 
 #mostradorMiembros img {
   @include sizes(200px, 300px);
@@ -57,43 +54,39 @@ table {
   border-collapse: collapse;
 }
 
-
 .presentacionProfesionales {
   color: $secondary-color;
   font-weight: bold;
   text-align: center;
 }
 
-/* ACÁ EMPIEZA EL ESTILO DE MOSTRADOR */
+/* ACÁ EMPIEZA EL ESTILO DE MOSTRADOR, SECCIÓN MIEMBROS */
 
 .profesionales {
   border-collapse: collapse;
   width: 50%;
   margin: auto;
-}
+  th {
+    border-top: 2.5px solid #c6b4cc;
+    border-bottom: 5px solid #c6b4cc;
 
-.profesionales th {
-  border-top: 2.5px solid #c6b4cc;
-  border-bottom: 5px solid #c6b4cc;
+    td {
+      border-bottom: 2.5px solid #c6b4cc;
+    }
+  }
 }
-
-.profesionales td {
-  border-bottom: 2.5px solid #c6b4cc;
-}
-
-.profesionales tbody tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
   background-color: #dddddd;
-}
 
-.profesionales tbody tr td:first-child {
-  text-align: center;
-}
+  |tbody tr td:first-child {
+    text-align: center;
 
-.profesionales tbody tr:last-child td {
-  border: none;
+    tbody tr:last-child td {
+      border: none;
+    }
+  }
 }
-
-.profesionales ul {
+ul {
   list-style-image: url("../imagenes/iconopaw.png");
 }
 
@@ -129,13 +122,12 @@ form {
   border-radius: 10px;
   display: inline-block;
   text-align: center;
-}
-
-.box img {
-  margin: 10px;
-  width: 250px;
-  height: 150px;
-  border-radius: 20%;
+  .img {
+    margin: 10px;
+    width: 250px;
+    height: 150px;
+    border-radius: 20%;
+  }
 }
 
 #mostradorServicios > div > div {
@@ -146,8 +138,6 @@ form {
   width: 100%;
   height: 100%;
 }
-
-
 
 fieldset {
   border-radius: 15px;
@@ -172,11 +162,11 @@ fieldset {
   height: 230px;
   width: 270px;
   text-align: center;
-}
 
-.card1 .text {
-  padding-left: 20px;
-  padding-right: 20px;
+  .text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 #opinionesDueños .card1 .text h3 {
@@ -194,6 +184,46 @@ fieldset {
   margin-inline-end: 0px;
 }
 
+@media (max-width: 576px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .card1 {
+    flex: 0 0 200px;
+    margin: 10px;
+    flex-grow: 1;
+    height: 370px;
+    width: 420px;
+    text-align: center;
+
+    .text {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  #opinionesDueños .card1 .text h3 {
+    color: $secondary-color;
+    text-align: center;
+  }
+
+  #opinionesDueños .card1 .text p {
+    text-align: center;
+    color: black;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+}
+
 /* COLOR DE LOS BOTONES */
 
 .button {
@@ -208,11 +238,11 @@ fieldset {
   margin: auto;
   border-radius: 5px;
   border: 1px solid black;
-}
 
-.button:hover {
-  background-color: $secondary-color;
-  color: white;
+  &:hover {
+    background-color: $secondary-color;
+    color: white;
+  }
 }
 
 .button2 {
@@ -225,11 +255,11 @@ fieldset {
   display: inline-block;
   border-radius: 5px;
   border: 1px solid black;
-}
 
-.button2:hover {
-  background-color: $secondary-color;
-  color: white;
+  &:hover {
+    background-color: $secondary-color;
+    color: white;
+  }
 }
 
 .icon {
@@ -279,13 +309,12 @@ fieldset {
 /* TRANSICIÓN APLICADA EN SECCIÓN SERVICIOS */
 .flipBox {
   background-color: transparent;
-  width: 25vw;
+  width: 100%;
   height: 30vh;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
   margin: 10px;
 }
-
 
 .flipBox__inner {
   position: relative;
@@ -332,13 +361,18 @@ fieldset {
   padding-top: 50px;
 }
 
+@media (min-width: 577px) {
+  .flipBox {
+    width: 25vw;
+  }
+}
+
 /* Cambio en los formularios */
 #contactoForm {
   padding-top: 50px;
 }
 
 iframe {
-
   border: 0;
 }
 
@@ -366,23 +400,20 @@ span {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border: 0;
+  img {
+    margin-top: -68px;
+    border: 5px solid white;
+  }
 }
 
-
-
-.about img {
-  margin-top: -68px;
-  border: 5px solid white;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .card {
     height: 300px;
   }
 }
 
-.inputStyle{
+.inputStyle {
   background-color: #aa8494;
-    color: white; 
-    border: 1px solid; 
+  color: white;
+  border: 1px solid;
 }

@@ -1,7 +1,6 @@
 @import "variables";
 /* ACÁ EMPIEZA EL MENÚ */
 
-
 .navContainer {
   text-align: right;
   top: 0;
@@ -17,40 +16,39 @@
   padding: 12px 10px;
   display: flex;
   flex-direction: row;
-}
 
-.navLogo img {
-  width: 60px;
-  height: 60px;
+  img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .navBar {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
 
-.navBar > li {
-  display: inline-block;
-  text-align: center;
-  border: none;
-  outline: 0;
-  position: relative;
-}
+  li {
+    display: inline-block;
+    text-align: center;
+    border: none;
+    outline: 0;
+    position: relative;
 
-.navBar > li > a {
-  display: block;
-  color: $secondary-color;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  position: relative;
-}
-
-.navBar > li > a:hover {
-  background-color: $tertiary-color;
-  color: white;
+    a {
+      display: block;
+      color: $secondary-color;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 15px;
+      position: relative;
+      &:hover {
+        background-color: $tertiary-color;
+        color: white;
+      }
+    }
+  }
 }
 
 .navBar li .dropbtn {
@@ -70,19 +68,18 @@
   background-color: #ffd4f0;
   min-width: 160px;
   z-index: 999;
-}
 
-.dropdown-content a {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  color: $secondary-color;
-}
-
-.dropdown-content a:hover {
-  background-color: $tertiary-color;
-  color: white;
+  a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: $secondary-color;
+    &:hover {
+      background-color: $tertiary-color;
+      color: white;
+    }
+  }
 }
 
 .dropdown:hover .dropdown-content {
@@ -94,5 +91,344 @@
   color: white !important;
 }
 
-
 /* ACÁ TERMINA EL MENÚ */
+
+@media (max-width: 576px) {
+  .gridContainer {
+    grid-template-columns: auto;
+    grid-gap: 30px;
+    margin: auto;
+    margin-right: 30px;
+    width: 100px;
+
+    img {
+      width: 50%;
+      height: 200px;
+    }
+  }
+  .navContainer {
+    position: relative;
+    text-align: center;
+    border-bottom: 2px solid #dbc9c5;
+  }
+  .navLogo {
+    float: none;
+    text-align: center;
+    padding: 20px;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  .navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    li {
+      display: block;
+      border-bottom: 1px solid darkviolet;
+
+      a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        height: 5vh;
+      }
+    }
+  }
+  .navBar > li:hover {
+    border-bottom: 0px;
+  }
+  .navBar li .dropbtn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  .navBar li.dropdown {
+    display: block;
+  }
+  .dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    opacity: 50%;
+    a {
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      height: 5vh;
+      color: $secondary-color;
+      border-bottom: 1px solid purple;
+
+      a:active {
+        background-color: $tertiary-color;
+        color: white;
+      }
+    }
+  }
+  .dropdown:active .dropdown-content {
+    display: block;
+  }
+  .imagenPrincipal img {
+    width: 75vw;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 577px) {
+  .gridContainer img:nth-child(6) {
+    grid-column: span 5;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .navContainer {
+    text-align: right;
+    top: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid #dbc9c5;
+    width: auto;
+    height: auto;
+  }
+  .navLogo {
+    color: $secondary-color;
+    font-size: 20px;
+    float: left;
+    padding: 12px 10px;
+    display: flex;
+    flex-direction: row;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      text-align: center;
+      border: none;
+      outline: 0;
+      position: relative;
+
+      a {
+        display: block;
+        color: $secondary-color;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        position: relative;
+
+        &:hover {
+          background-color: $tertiary-color;
+          color: white;
+        }
+      }
+    }
+  }
+  .navBar li .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navBar li.dropdown {
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 999;
+  }
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: $secondary-color;
+  }
+  .dropdown-content a:hover {
+    background-color: $tertiary-color;
+    color: white;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .active {
+    background-color: $tertiary-color;
+    color: white !important;
+  }
+  .imagenPrincipal {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .navContainer {
+    position: relative;
+    text-align: center;
+    border-bottom: 2px solid #dbc9c5;
+  }
+  .navLogo {
+    float: none;
+    text-align: center;
+    padding: 20px;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+  .navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    li {
+      display: block;
+      border-bottom: 1px solid darkviolet;
+
+      a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        height: 5vh;
+      }
+    }
+  }
+  .navBar > li:hover {
+    border-bottom: 0px;
+  }
+  .navBar li .dropbtn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  .navBar li.dropdown {
+    display: block;
+  }
+  .dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    opacity: 50%;
+    a {
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      height: 5vh;
+      color: $secondary-color;
+      border-bottom: 1px solid purple;
+
+      &active {
+        background-color: $tertiary-color;
+        color: white;
+      }
+    }
+  }
+  .dropdown:active .dropdown-content {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .navContainer {
+    text-align: right;
+    top: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid #dbc9c5;
+    width: auto;
+    height: auto;
+  }
+  .navLogo {
+    color: $secondary-color;
+    font-size: 20px;
+    float: left;
+    padding: 12px 10px;
+    display: flex;
+    flex-direction: row;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      text-align: center;
+      border: none;
+      outline: 0;
+      position: relative;
+
+      a {
+        display: block;
+        color: $secondary-color;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        position: relative;
+
+        &:hover {
+          background-color: $tertiary-color;
+          color: white;
+        }
+      }
+    }
+  }
+  .navBar li .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navBar li.dropdown {
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 999;
+  }
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: $secondary-color;
+  }
+  .dropdown-content a:hover {
+    background-color: $tertiary-color;
+    color: white;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .active {
+    background-color: $tertiary-color;
+    color: white !important;
+  }
+  .imagenPrincipal {
+    display: block;
+  }
+}

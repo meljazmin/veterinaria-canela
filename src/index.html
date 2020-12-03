@@ -39,7 +39,7 @@
         </div>
       <li><a href="html/que-dicen-de-nosotros.html">Que dicen de nosotros</a></li>
       <li><a href="html/contacto.html">Contacto</a></li>
-    </ul> 
+    </ul>
   </nav>
   <div class="jumbotron jumbotron rounded">
     <div class="container">
@@ -131,19 +131,27 @@
         <h2>Suscribite a nuestro newsletter</h2>
         <p>Si querés suscribirte, dejanos tu correo y nos contactaremos con vos.</p>
         <form action method="post">
-          <input type="email" name="email" placeholder="info@veterinariacanela.com">
-          <input type="submit" value="Suscribite" class="inputStyle">
+          <input type="email" name="email" placeholder="info@veterinariacanela.com" id="emailHolder">
+          <input type="submit" value="Suscribite" class="inputStyle" id="inputStyle">
         </form>
       </div>
     </div>
   </footer>
-  <script src="js/libs/WOW-1.3.0/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/libs/WOW-1.3.0/wow.min.js"></script>
+  <script>
+    (() => {
+      new WOW().init();
+      var input = document.getElementById("inputStyle");
+      input.addEventListener("click", () => {
+        var emailHolder = document.getElementById("emailHolder");
+        alert("Ha sido suscripto al boletín de noticias");
+      })
+
+    })();
+  </script>
 </body>
 
 </html>

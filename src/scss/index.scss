@@ -1,60 +1,79 @@
- @import "variables";
-.mascotas::before {
+@import "variables";
+
+.mascotas {
+  color: $secondary-color;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  text-decoration: underline;
+  padding-top: 30px;
+
+  &::before {
     content: "♥";
     position: -webkit-sticky;
   }
-  
-  .mascotas {
-    color: $secondary-color;
-    font-weight: bold;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px;
-    text-decoration: underline;
-    padding-top: 30px;
-  }
-  
-  .cabeceraPagina {
-    text-align: center;
-    color:$secondary-color;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-  }
-  
-  .cabeceraPagina__descripcion{
+}
+
+.cabeceraPagina {
+  text-align: center;
+  color: $secondary-color;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+
+  &__descripcion {
     text-align: center;
     color: black;
     font-weight: bold;
-  
   }
-  
-  .subtituloPaginaPrincipal {
-    color: $secondary-color;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  
-  .imagenPrincipal img {
-    width: 450px;
-    height: 450px;
-  }
-  
-  .imagenPrincipal img:last-child {
-    display: none;
-  }
-  
-  .imagenPrincipal:hover img:first-child {
-    display: none;
-  }
-  
-  .imagenPrincipal:hover img:last-child {
-    display: block;
-    transition-duration: 2s;
-  }
-  
-  
+}
+
+.imagenDoctora {
+  border-radius: 50%;
+  width: 300px;
+  height: 200px;
+  // margin-left: 40px;
+}
+
+@media (min-width: 577px) {
   .imagenDoctora {
-    border-radius: 50%;
     width: 500px;
     height: 300px;
   }
+}
+
+@media (max-width: 576px) {
+  .cabeceraPagina {
+    text-align: center;
+    color: $secondary-color;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+
+    &__descripcion {
+      text-align: center;
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+.subtituloPaginaPrincipal {
+  color: $secondary-color;
+  font-family: "Open Sans", sans-serif;
+}
+
+.imagenPrincipal img {
+  width: 450px;
+  height: 450px;
+}
+.imagenPrincipal img:last-child {
+  display: none;
+}
+
+.imagenPrincipal:hover img:first-child {
+  display: none;
+}
+
+.imagenPrincipal:hover img:last-child {
+  display: block;
+  transition-duration: 2s;
+}
