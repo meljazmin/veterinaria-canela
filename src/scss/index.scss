@@ -32,7 +32,6 @@
   border-radius: 50%;
   width: 300px;
   height: 200px;
-  // margin-left: 40px;
 }
 
 @media (min-width: 577px) {
@@ -76,4 +75,10 @@
 .imagenPrincipal:hover img:last-child {
   display: block;
   transition-duration: 2s;
+}
+
+
+.fa-gratipay{
+  color: $secondary-color;
+
 }

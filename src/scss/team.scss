@@ -1,4 +1,5 @@
 @import "variables";
+@import "menu";
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -16,13 +17,11 @@
   overflow: hidden;
   width: 255px;
   height: 250px;
+  img {
+    width: 255px;
+    height: 250px;
+  }
 }
-
-.member-img img {
-  width: 255px;
-  height: 250px;
-}
-
 .team .member .social {
   position: absolute;
   left: 0;
@@ -80,10 +79,10 @@
   opacity: 1;
 }
 
-.jumbotron {
-  background-image: url("../imagenes/fondo_patitas.png");
-  border-radius: 5%;
-}
+// .jumbotron {
+//   background-image: url("../imagenes/fondo_patitas.png");
+//   border-radius: 5%;
+// }
 
 .view img {
   height: 75vh;
