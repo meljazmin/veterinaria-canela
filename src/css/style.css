@@ -682,6 +682,11 @@ footer {
 .testimonials {
   height: 50vh; }
 
+@media only screen and (max-width: 577px) {
+  .image-members {
+    margin: auto;
+    display: block; } }
+
 .pad {
   width: 25px;
   height: 27px;
