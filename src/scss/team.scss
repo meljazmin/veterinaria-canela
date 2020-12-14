@@ -3,6 +3,7 @@
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
+
 .team .member {
   margin-bottom: 20px;
   overflow: hidden;
@@ -194,10 +195,33 @@
   height: 50vh;
 }
 
-
 @media only screen and (max-width: 577px) {
-  .image-members{
-   margin: auto;
-   display: block; 
+  .image-members {
+    margin: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    overflow: auto; 
+  }
+  @media (max-width: 576px) {
+    .testimonials2,
+    .testimonials3,
+    .testimonials4 {
+      flex: 0 0 200px;
+      margin: 10px;
+      flex-grow: 1;
+      height: 370px;
+      width: 420px;
+      text-align: center;
+    }
   }
 }

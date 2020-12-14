@@ -687,6 +687,27 @@ footer {
     margin: auto;
     display: block; } }
 
+@media (max-width: 576px) {
+  .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    overflow: auto; } }
+
+@media (max-width: 576px) and (max-width: 576px) {
+  .testimonials2,
+  .testimonials3,
+  .testimonials4 {
+    flex: 0 0 200px;
+    margin: 10px;
+    flex-grow: 1;
+    height: 370px;
+    width: 420px;
+    text-align: center; } }
+
 .pad {
   width: 25px;
   height: 27px;
@@ -1237,7 +1258,8 @@ fieldset {
     text-align: center; }
     .card1 .text {
       padding-left: 20px;
-      padding-right: 20px; }
+      padding-right: 20px;
+      padding-top: 45px; }
   #opinionesDueños .card1 .text h3 {
     color: #7d2850;
     text-align: center; }
@@ -1400,7 +1422,7 @@ span {
 
 @media (max-width: 576px) {
   .card {
-    height: 300px; } }
+    height: 295px; } }
 
 .inputStyle {
   background-color: #aa8494;
