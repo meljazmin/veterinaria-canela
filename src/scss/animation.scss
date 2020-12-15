@@ -137,3 +137,9 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 577px){
+  #pawContainer{
+    overflow: auto; 
+  }
+}
