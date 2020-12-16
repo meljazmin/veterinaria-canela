@@ -86,81 +86,13 @@
 // }
 
 .view img {
-  height: 75vh;
+  height: 50vh;
 }
 
-.testimonial {
-  background: #fff;
-  text-align: center;
-  padding: 30px 30px 50px;
-  margin: 0 15px 100px;
-  position: relative;
-
-  &:before,
-  &:after {
-    content: "";
-    border-top: 40px solid #fff;
-    border-right: 125px solid transparent;
-    position: absolute;
-    bottom: -40px;
-    left: 0;
+@media (min-width: 577px) {
+  .view img {
+    height: 75vh;
   }
-}
-.testimonial:after {
-  border-right: none;
-  border-left: 125px solid transparent;
-  left: auto;
-  right: 0;
-}
-
-.testimonial .icon {
-  display: inline-block;
-  font-size: 80px;
-  color: #bd986b;
-  margin-bottom: 20px;
-  opacity: 0.6;
-}
-
-.testimonial .description {
-  font-size: 15px;
-  color: #777;
-  text-align: left;
-  margin-bottom: 30px;
-  opacity: 0.8;
-}
-
-.testimonial .testimonial-content {
-  width: $width/2;
-  position: absolute;
-  left: 0;
-}
-
-.testimonial .pic {
-  display: inline-block;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 2px 2px #daad86;
-  overflow: hidden;
-  z-index: 1;
-  position: relative;
-
-  img {
-    width: $width/2;
-    height: auto;
-  }
-}
-.testimonial .title {
-  font-size: 15px;
-  font-weight: bold;
-  color: #fff;
-  text-transform: capitalize;
-  margin: 0 0 5px 0;
-}
-
-.testimonial .post {
-  display: block;
-  font-size: 14px;
-  color: #ffd9b8;
 }
 
 .owl-theme .owl-controls {
@@ -182,19 +114,6 @@
   border-color: #fff;
 }
 
-@media only screen and (max-width: 650px) and (min-width: 400px) {
-  .testimonial:before {
-    border-right: 325px solid transparent;
-  }
-  .testimonial:after {
-    border-left: 325px solid transparent;
-  }
-}
-
-.testimonials {
-  height: 50vh;
-}
-
 @media only screen and (max-width: 577px) {
   .image-members {
     margin: auto;
@@ -202,26 +121,27 @@
   }
 }
 
+// .testimonials {
+//   height: 50vh;
+// }
+
+// @media (max-width: 576px) {
+//   .testimonials {
+//     flex-wrap: wrap;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: center;
+//     padding-top: 50px;
+//     // overflow: auto;
+//   }
+// }
+
+.testimonials {
+  margin: 10px;
+}
+
 @media (max-width: 576px) {
-  .testimonials {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-    overflow: auto; 
-  }
-  @media (max-width: 576px) {
-    .testimonials2,
-    .testimonials3,
-    .testimonials4 {
-      flex: 0 0 200px;
-      margin: 10px;
-      flex-grow: 1;
-      height: 370px;
-      width: 420px;
-      text-align: center;
-    }
+  .testimonials .sombra {
+    margin-top: 10vh;
   }
 }

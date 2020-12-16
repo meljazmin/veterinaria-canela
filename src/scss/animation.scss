@@ -40,8 +40,9 @@
 /* POSICIÓN Y ANIMACIÓN HUELLAS */
 #pawContainer {
   z-index: -1;
-  position: relative;
-  height: 500px;
+  position: absolute;
+  // height: 100%;
+  top: 10vh;
 }
 .paw-print-1 {
   opacity: 0;
@@ -138,8 +139,8 @@
   }
 }
 
-@media (max-width: 577px){
-  #pawContainer{
-    overflow: auto; 
-  }
-}
+// @media (max-width: 577px){
+//   #pawContainer{
+//     width: 100vw; 
+//   }
+// }
